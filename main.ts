@@ -18,27 +18,27 @@ resumeform.addEventListener('submit', (event:Event) =>{
     
     //generate resume content
     const resumeHTML = `
-     <h2><b><center>Resume</center></b></h2>
+     <h2><b><center>Editable Resume</center></b></h2>
      <br>
      <h3>Personal Information</h3>
-     <p><b>Name:</b>${name}</p>
-     <p><b>Phone:</b>${phone}</p>
-     <p><b>Email:</b>${email}</p>
+     <p><b>Name:</b><span contenteditable="true">${name}</span></p>
+     <p><b>Phone:</b><span contenteditable="true">${phone}</span></p>
+     <p><b>Email:</b><span contenteditable="true">${email}</span></p>
 
      <br>
 
      <h3>Education</h3>
-     <p>${education}</p>
+     <p contenteditable="true">${education}</p>
 
      <br>
 
       <h3>Work Experience</h3>
-     <p>${workexperience}</p>
+     <p contenteditable="true">${workexperience}</p>
 
      <br>
 
       <h3>Skills</h3>
-     <p>${skills}</p>
+     <p contenteditable="true">${skills}</p>
 
     `;
 
